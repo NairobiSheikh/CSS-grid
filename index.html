@@ -1,23 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="/assets/main.css">
   <title>Starter Files and Tooling Setup!</title>
 </head>
-
-<style>
-  p {
-    font-size: 50px;
-    border-bottom: 10px solid var(--yellow);
-    color: var(--black);
-  }
-</style>
-
 <body>
-  <p>Hello!</p>
+  <div class="container">
+    <div class="item item1">1</div>
+    <button id="btn1">hide</button>
+    <button id="btn2">show</button>
+    <input id="mytext" placeholder="Your name here" type="text">
+    <button id="mybutton">Click me</button>
+    <div id="output" class="item"></div>
+    <div class="item item2">2</div>
+    <div class="item item3">3</div>
+    <div class="item item4">4</div>
+    <div class="item item5">5</div>
+    <div class="item item6">6</div>
+    <div class="item item7">7</div>
+    <div class="item item8">8</div>
+    <div class="item item9">9</div>
+    <div class="item item10">.</div>
+    <div class="item item11">10</div>
+    <div class="item item12">=</div>
+  </div>
+  <style>
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fite, minmax(150px, 2fr, 1fr, 1fr));
+      gap: 20px;
+    }
+    /* .item11 {
+      grid-column: 3 / span 5;
+    } */
+  </style>
+  <script src="main.js"></script>
 </body>
-
 </html>
